@@ -1,35 +1,47 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useEffect, useState } from 'react'
+import HeroSection from './components/HeroSection'
+import Experience from './components/Experience';
 
 function App() {
-  const [count, setCount] = useState(0)
+    const [theme, setTheme] = useState(null);
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    useEffect(() => {
+        if(window.matchMedia('(prefers-color-scheme: dark)').matches){
+            setTheme('dark');
+        } else {
+            setTheme('light');
+        }
+    }, []);
+
+    useEffect(() => {
+        if(theme === 'dark') {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    }, [theme]); // whenever we change the theme it will invoke this func
+
+    const handleThemeSwitch = () => {
+        setTheme(theme == 'dark' ? 'light' : 'dark');
+    }
+
+    return (
+        <>
+            <button
+                type='button'
+                onClick={handleThemeSwitch}
+                className="fixed z-10 right-2 top-2 bg-indigo-500 text-lg p-1 rounded-md"
+            >
+                {theme === 'dark' ? 'MOON' : 'SUN'}
+                Button</button>
+            <div className='font-inter bg:white dark:bg-slate-900'>
+                <div className='max-w-5xl mx-auto w-11/12'>
+                    <HeroSection></HeroSection>
+                    <Experience></Experience>
+                </div>
+            </div>
+        </>
+    )
 }
 
 export default App

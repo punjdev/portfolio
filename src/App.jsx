@@ -33,16 +33,16 @@ function App() {
             <button
                 type='button'
                 onClick={handleThemeSwitch}
-                className="fixed z-10 right-2 top-2 bg-indigo-500 text-lg p-1 rounded-md"
+                className="fixed z-10 right-2 top-2 bg-sky-600 hover:bg-sky-700 text-lg p-1 rounded-md"
             >
-                {theme === 'dark' ? 'MOON' : 'SUN'}
-                Button</button>
-            <div className='font-inter bg:white dark:bg-slate-900'>
+                {theme === 'dark' ? '☀️' : '🌘'}
+                </button>
+            <div className='font-inter bg-white dark:bg-neutral-800'>
                 <div className='max-w-5xl mx-auto w-11/12'>
                     <HeroSection></HeroSection>
+                    <AboutMe></AboutMe>
                     <Experience></Experience>
                     <Projects></Projects>
-                    <AboutMe></AboutMe>
                     <Footer></Footer>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "private": true,
-  "homepage": "https://punjdev.github.io/portfolio",
+  "homepage": "https://punjdev.github.io/portfolio/",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import HeroSection from './components/HeroSection'
 import Experience from './components/Experience';
+import Projects from './components/Projects';
+import AboutMe from './components/AboutMe';
+import Footer from './components/Footer';
 
 function App() {
     const [theme, setTheme] = useState(null);
@@ -38,6 +41,9 @@ function App() {
                 <div className='max-w-5xl mx-auto w-11/12'>
                     <HeroSection></HeroSection>
                     <Experience></Experience>
+                    <Projects></Projects>
+                    <AboutMe></AboutMe>
+                    <Footer></Footer>
                 </div>
             </div>
         </>

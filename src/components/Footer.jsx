@@ -10,7 +10,7 @@ function Footer() {
             dev.punjabi@mail.utoronto.ca
         </a>
         <p className='text-xs mt-2 text-gray-500'>
-            Last Edit: 24-10-23
+            Last Edit: 24/10/23
         </p>
     </div>
   )

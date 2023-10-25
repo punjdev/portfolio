@@ -34,8 +34,7 @@ function App() {
                 type='button'
                 onClick={handleThemeSwitch}
                 className="fixed z-10 right-2 top-2 bg-sky-600 hover:bg-sky-700 text-lg p-1 rounded-md"
-            >
-                {theme === 'dark' ? '☀️' : '🌘'}
+            >{theme === 'dark' ? '☀️' : '🌘'}
                 </button>
             <div className='font-inter bg-white dark:bg-neutral-800'>
                 <div className='max-w-5xl mx-auto w-11/12'>

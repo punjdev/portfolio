@@ -9,7 +9,7 @@ export default [{
     {
         title: 'University of Toronto Mississauga',
         icon: <IoMdSchool className='w-full h-full'></IoMdSchool>,
-        description: 'During my 3 years at the University of Toronto\'s Mississauga campus, I\'ve acquired more knowledge than I expected. I have gotten the opportunity to studied a wide range of subjects, from statistics and high-level math to algorithm design and operating systems. With minors in Mathematical Sciences and Business, Science, and Entrepreneurship, I have gained so much knowledge yet I remain eager to learn more.',
+        description: 'During my three years at the University of Toronto\'s Mississauga campus, where I pursued minors in Mathematical Sciences and Business, Science, and Entrepreneurship, I\'ve learned so much. My academic journey has taken me through a diverse array of subjects, including statistics, high-level mathematics, philosophy, business to algorithm design, and operating systems.',
     },
     {
         title: 'Personal Projects',

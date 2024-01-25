@@ -25,7 +25,7 @@ function AboutMe() {
             </p>
         </div>
         <img 
-        src="https://drive.google.com/file/d/1HOEA29q2ZVIAteYQDLxd_7BVerpUnePJ/view?usp=drive_link" 
+        src="../../images/me.jpg" 
         alt="" 
         className='w-full md:w-6/12 rounded-lg object-cover'/>
 

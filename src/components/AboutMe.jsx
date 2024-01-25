@@ -25,7 +25,7 @@ function AboutMe() {
             </p>
         </div>
         <img 
-        src="./images/me.jpg" 
+        src="https://github.com/punjdev/portfolio/assets/90057112/c48b5aa8-f781-411a-a4bd-09d0f2224a8a" 
         alt="" 
         className='w-full md:w-6/12 rounded-lg object-cover'/>
 

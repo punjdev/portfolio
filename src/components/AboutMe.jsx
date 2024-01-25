@@ -25,7 +25,7 @@ function AboutMe() {
             </p>
         </div>
         <img 
-        src="https://media.licdn.com/dms/image/D5603AQGcLtp-P7ASTw/profile-displayphoto-shrink_800_800/0/1695277040836?e=1709164800&v=beta&t=TEaKBNNSCWeCidCrGgE_FtaO7L18Qlzhfe02XdO6lZM" 
+        src="../images/me.jpg" 
         alt="" 
         className='w-full md:w-6/12 rounded-lg object-cover'/>
 

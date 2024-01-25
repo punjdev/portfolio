@@ -25,7 +25,7 @@ function AboutMe() {
             </p>
         </div>
         <img 
-        src="../../images/me.jpg" 
+        src="./images/me.jpg" 
         alt="" 
         className='w-full md:w-6/12 rounded-lg object-cover'/>
 
